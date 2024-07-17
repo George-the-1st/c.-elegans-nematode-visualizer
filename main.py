@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+from mpl_toolkits.mplot3d import Axes3D
 import csv
 
 neuron_names:list[str] = []
@@ -16,7 +18,21 @@ with open('LowResAtlas.csv', newline='') as csvfile:
         z.append(float(items[2]))
         y.append(float(items[3]))
 
-ax = plt.figure(figsize=(15,7)).add_subplot(projection='3d')
+#plotting/graphig/showing said data
+fig = plt.figure(figsize=(15,7))
+ax = fig.add_subplot(projection='3d')
 ax.scatter(x,y,z, marker='2', alpha=0.5, color='red')
 ax.set_box_aspect([10,1,2])
-plt.show()
+
+initial_azim:int = 180
+ax.view_init(elev=30, azim=initial_azim)
+
+def animate(angle):
+    ax.view_init(elev=30, azim=(initial_azim + angle) % 360)
+
+
+anim = FuncAnimation(fig, animate, frames=range(0, 360), interval=50)
+
+#save animation
+anim.save('c_elegans_neuron_rotation.gif', writer='pillow', fps=30)
+#plt.show()
