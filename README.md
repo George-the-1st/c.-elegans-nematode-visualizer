@@ -6,6 +6,10 @@ I made it for my own visualization needs. This model can be used as a basis for 
 
 Cheers, and God bless!
 
+![With Connections](c_elegans_neuron_rotation.gif)
+
+![Without, Green=interneuron, Red=sensoryneuron, Blue=motorneuron](c_elegans_neuron_rotation1.gif)
+
 The sources for the mapping come from these two sources:
 1. for the synpases (2.1 Connectivity Data, and neuron type data from Fig 2):
     https://www.wormatlas.org/neuronalwiring.html
