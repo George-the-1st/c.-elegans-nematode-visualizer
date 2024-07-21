@@ -7,8 +7,10 @@ I made it for my own visualization needs. This model can be used as a basis for 
 Cheers, and God bless!
 
 ![With Connections](c_elegans_neuron_rotation.gif)
+With Connections
 
-![Without, Green=interneuron, Red=sensoryneuron, Blue=motorneuron](c_elegans_neuron_rotation1.gif)
+![Without Connections, Green=interneuron, Red=sensoryneuron, Blue=motorneuron](c_elegans_neuron_rotation1.gif)
+Without Connections, Green=interneuron, Red=sensoryneuron, Blue=motorneuron
 
 The sources for the mapping come from these two sources:
 1. for the synpases (2.1 Connectivity Data, and neuron type data from Fig 2):
