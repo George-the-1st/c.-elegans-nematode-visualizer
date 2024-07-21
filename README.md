@@ -17,3 +17,5 @@ The sources for the mapping come from these two sources:
     https://www.wormatlas.org/neuronalwiring.html
 2. for the neurons:
     https://github.com/bluevex/elegans-atlas/blob/main/
+
+note: the data isn't perfect. There are some minor mapping and missing neurons. Careful.
